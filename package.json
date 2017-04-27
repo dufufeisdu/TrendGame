@@ -5,7 +5,7 @@
   "main": "user-login.js",
   "scripts": {
     "dev": "webpack -d --watch",
-    "build" : "webpack -p",
+    "build": "webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +27,9 @@
     "babel-core": "^6.24.1"
   },
   "dependencies": {
+    "bookshelf": "^0.10.3",
+    "knex": "^0.12.9",
+    "mysql": "^2.13.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   }
