@@ -1,2 +1,0 @@
-# TrendGame
-Only the trendiest.
