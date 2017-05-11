@@ -5,7 +5,7 @@ db.knex.schema.hasTable('trends').then(function (exists) {
     db.knex.schema.createTable('trends', function (trend) {
       trend.increments('id').primary();
       trend.string('name');
-      trend.timestamps();
+      trend.timestamp('created_at').defaultTo(knex.fn.now());
     }).then(function (table) {
       console.log('Created Table trends');
     });
